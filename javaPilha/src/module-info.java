@@ -1,0 +1,9 @@
+/**
+ * 
+ */
+/**
+ * @author toshyro
+ *
+ */
+module javaPilha {
+}
