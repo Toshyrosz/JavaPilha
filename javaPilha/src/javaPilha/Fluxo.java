@@ -6,7 +6,7 @@ public class Fluxo {
 		System.out.println("Ini main");
 		try {	
 			metodo1();
-		}catch(ArithmeticException | NullPointerException ex) {
+		}catch(ArithmeticException | NullPointerException | MinhaExcecao ex) {
 			String msg  = ex.getMessage();
 			System.out.println("Exception " + msg);
 			ex.printStackTrace();
@@ -25,8 +25,8 @@ public class Fluxo {
 	private static void metodo2() {
 		System.out.println("Ini do metodo2");
 		// criando objeto da classe
-		ArithmeticException ex  = new ArithmeticException();
-		throw ex;
+		throw new MinhaExcecao("deu errado");
+		
 		
 		
 		//System.out.println("Fim do metodo2");
