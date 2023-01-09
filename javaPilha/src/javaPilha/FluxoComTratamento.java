@@ -2,6 +2,9 @@ package javaPilha;
 
 public class FluxoComTratamento {
 
+	private static Conta c;
+
+
 	public static void main(String[] args) {
 		System.out.println("Ini do main");
 		metodo1();
@@ -33,11 +36,13 @@ public class FluxoComTratamento {
 		System.out.println("Ini do metodo2");
 		for(int i = 1; i <= 5; i++) {
 			System.out.println(i);
-			//int a = i / 0;	
-			Conta c = null;
-			c.deposita();
-
-		} 
+			c = null;
+			try {c.deposita();
+			}catch(Exception ex) {
+				System.out.println("");
+			}
+			}
 		System.out.println("Fim do metodo2");
+		} 
+
 	}
-}
