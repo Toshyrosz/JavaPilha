@@ -37,12 +37,13 @@ public class FluxoComTratamento {
 		for(int i = 1; i <= 5; i++) {
 			System.out.println(i);
 			c = null;
-			try {c.deposita();
+			try {
+				c.deposita();
 			}catch(Exception ex) {
 				System.out.println("");
 			}
-			}
+		}
 		System.out.println("Fim do metodo2");
-		} 
+	} 
 
-	}
+}
